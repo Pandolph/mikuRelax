@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="user_manager_status_bar">#0097A7</color>
+    <color name="user_manager_app_bar">#00BCD4</color>
+    <color name="median_gray">#339E9E9E</color>
+    <color name="add_panel_background">#999999</color>
+    <color name="background">#FAFAFA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="highlight">#84FFFF</color>
+    <color name="attention_histogram">#ff9800</color>
+    <color name="relax_histogram">#2196f3</color>
+    <color name="eeg_power_line_graph">#000000</color>
+    <color name="raw_data_line_graph">#921AFF</color>
+    <color name="relax_line_graph">#2196f3</color>
+    <color name="attention_line_graph">#ff9800</color>
+</resources>

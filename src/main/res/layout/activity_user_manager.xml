@@ -1,0 +1,282 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".RelaxActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/UserManager.Head" />
+
+    <RelativeLayout
+        android:layout_width="408dp"
+        android:layout_height="64dp"
+        android:id="@+id/add_panel"
+        android:background="@color/median_gray"
+        android:layout_marginTop="114.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <EditText
+            android:layout_width="102dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="1"
+            android:id="@+id/add_number"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:background="@null"
+            android:focusable="true"
+            android:numeric="integer"
+            android:focusableInTouchMode="true" />
+
+        <EditText
+            android:layout_width="102dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/add_number"
+            android:layout_alignParentTop="true"
+            android:text="name"
+            android:id="@+id/add_name"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <Spinner
+            android:layout_width="51dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="229.5dp"
+            android:layout_alignParentTop="true"
+            android:textSize="14dp"
+            android:id="@+id/add_sex"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:layout_width="51dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="331.5dp"
+            android:layout_alignParentTop="true"
+            android:textSize="14dp"
+            android:id="@+id/add_age"
+            android:layout_weight="1" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:id="@+id/app_bar"
+        android:adjustViewBounds="true"
+        android:layout_below="@id/status_bar"
+        android:background="@color/user_manager_app_bar" />
+
+    <TextView
+        android:layout_width="99.5dp"
+        android:layout_height="78dp"
+        android:text="用户管理"
+        android:id="@+id/title"
+        android:layout_below="@+id/status_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="36dp"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:text="编号"
+        android:id="@+id/number"
+        android:layout_below="@+id/title"
+        android:layout_alignLeft="@+id/app_bar"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:text="姓名"
+        android:id="@+id/name"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/number"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:text="性别"
+        android:id="@+id/sex"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/name"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:text="年龄"
+        android:id="@+id/age"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/sex"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="@android:color/white" />
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/delete_btn"
+        android:background="@drawable/delete_btn_selector"
+        android:layout_marginLeft="244dp"
+        android:layout_marginTop="66.5dp" />
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/edit_btn"
+        android:background="@drawable/edit_btn_selector"
+        android:layout_toRightOf="@id/delete_btn"
+        android:layout_alignTop="@id/delete_btn" />
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/add_btn"
+        android:background="@drawable/add_btn_selector"
+        android:layout_toRightOf="@id/edit_btn"
+        android:layout_alignTop="@id/edit_btn" />
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/cancel_btn"
+        android:background="@drawable/cancel_btn_selector"
+        android:layout_toRightOf="@id/delete_btn"
+        android:layout_alignTop="@id/delete_btn" />
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/finish_btn"
+        android:background="@drawable/finish_btn_selector"
+        android:layout_toRightOf="@id/cancel_btn"
+        android:layout_alignTop="@id/cancel_btn" />
+
+    <com.cn.enter.relax.view.UserListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_view"
+        android:layout_marginTop="178.5dp"
+        android:layout_alignLeft="@+id/number"
+        android:layout_alignRight="@id/age"
+        android:background="@color/background"/>
+
+    <RelativeLayout
+        android:layout_width="626dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="408dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/detail_panel" >
+
+        <TextView
+            android:layout_width="99.5dp"
+            android:layout_height="78dp"
+            android:text="测试详情"
+            android:layout_marginLeft="40.5dp"
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textColor="@android:color/white" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="51.5dp"
+            android:layout_marginTop="126dp"
+            android:layout_marginRight="120dp"
+            android:id="@+id/test_id_scroll">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:id="@+id/test_id_panel"
+                    android:orientation="horizontal"/>
+
+                <TextView
+                    android:layout_width="102dp"
+                    android:layout_height="5dp"
+                    android:layout_alignBottom="@id/test_id_panel"
+                    android:id="@+id/highlight_bar"
+                    android:visibility="invisible"
+                    android:background="@color/highlight" />
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="79dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="178.5dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/background"
+            android:id="@+id/report_panel">
+
+            <ImageButton
+                android:layout_width="96dp"
+                android:layout_height="44dp"
+                android:id="@+id/generate_report"
+                android:layout_marginLeft="51.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/generate_report_btn_selector" />
+
+            <ImageButton
+                android:layout_width="96dp"
+                android:layout_height="44dp"
+                android:id="@+id/delete_report"
+                android:layout_marginLeft="171.5dp"
+                android:layout_alignTop="@id/generate_report"
+                android:background="@drawable/delete_report_btn_selector" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:layout_width="120.5dp"
+            android:layout_height="144.5dp"
+            android:id="@+id/add_test_btn"
+            android:background="@drawable/add_test_btn_selector"
+            android:layout_marginLeft="490dp"
+            android:layout_marginTop="102dp"/>
+
+        <WebView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/report_panel"
+            android:id="@+id/web_view"
+            android:layout_alignParentBottom="true">
+
+        </WebView>
+    </RelativeLayout>
+
+</RelativeLayout>

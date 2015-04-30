@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Relax</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_monitor">MonitorActivity</string>
+
+    <string name="monitor_tv">监测视窗</string>
+    <string name="connect_state_not_connected">未连接头戴</string>
+    <string name="connect_state_connecting">连接中</string>
+    <string name="connect_state_connected">已连接</string>
+    <string name="connect_state_not_paired">未配对</string>
+    <string name="connect_state_not_found">未发现设备</string>
+    <string name="connect_state_disconnected">连接断开</string>
+    <string name="comment">备注</string>
+    <string name="attention">专注度</string>
+    <string name="relax">放松度</string>
+    <string name="delta">delta(0.5-2.75Hz)</string>
+    <string name="theta">theta(3.5-6.75Hz)</string>
+    <string name="low_alpha">low_alpha(7.5-9.25Hz)</string>
+    <string name="high_alpha">high_alpha(10-11.75Hz)</string>
+    <string name="low_beta">low_beta(13-16.75Hz)</string>
+    <string name="high_beta">high_beta(18-29.75Hz)</string>
+    <string name="low_gama">low_gama(31-39.75Hz)</string>
+    <string name="mid_gama">mid_gama(41-49.75Hz)</string>
+    <string name="raw_mind_wave">原始脑波曲线</string>
+    <string name="attention_mind_wave">专注度曲线</string>
+    <string name="relax_mind_wave">放松度曲线</string>
+</resources>
